@@ -29,7 +29,7 @@ print("– A mover vacas...", end='')
 input()
 print("– Eres ganadero?", end='')
 input()
-print("– No, soy maestro de zumba xdxdxd")
+print("– No, soy maestro de zumba. xdxdxd")
 print("BA-DUM-TSS!")
 print()
 sleep(3)
@@ -50,4 +50,29 @@ input()
 print("– PERO SOY UN DALMATA!")
 print("BA-DUM-TSS!")
 print()
-sleep(3)
+sleep(2)
+
+# Despedida:
+print("Espero te hayas divertido.")
+print("Doy clases los jueves, no cobro mucho. xdxdxd")
+
+fin = """  _________________________________
+ |.--------_--_------------_--__--.|
+ ||    /\ |_)|_)|   /\ | |(_ |_   ||
+ ;;`,_/``\|__|__|__/``\|_| _)|__ ,:|
+((_(-,-----------.-.----------.-.)`)
+ \__ )        ,'     `.        \ _/
+ :  :        |_________|       :  :
+ |-'|       ,'-.-.--.-.`.      |`-|
+ |_.|      (( (*  )(*  )))     |._|
+ |  |       `.-`-'--`-'.'      |  |
+ |-'|        | ,-.-.-. |       |._|
+ |  |        |(|-|-|-|)|       |  |
+ :,':        |_`-'-'-'_|       ;`.;
+  \  \     ,'           `.    /._/
+   \/ `._ /_______________\_,'  /
+    \  / :   ___________   : \,'
+     `.| |  |           |  |,'
+       `.|  |           |  |
+         |  | SSt       |  |"""
+print(fin)
