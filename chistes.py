@@ -8,11 +8,18 @@ from time import sleep
 # sleep(segundos)
 # print("Woow, han pasado", segundos, "segundos.")
 
+# Funcion para limpiar la pantalla:
+def limpiar(saltos):
+    linea = "\n" * saltos
+    print(linea)
+    return
+
 # Saludo:
 print("Hola a todos!")
 print("Les voy a contar unos chistes!")
 print()
 sleep(2)
+limpiar(1000)
 
 # Chiste 1:
 print("– No cabia duda...", end='')
@@ -21,6 +28,7 @@ print("– Y duda se fue en otro coche...")
 print("BA-DUM-TSS!")
 print()
 sleep(3)
+limpiar(1000)
 
 # Chiste 2:
 print("– A que te dedicas?", end='')
@@ -33,6 +41,7 @@ print("– No, soy maestro de zumba. xdxdxd")
 print("BA-DUM-TSS!")
 print()
 sleep(3)
+limpiar(1000)
 
 # Chiste 3:
 print("– Te puedo robar un beso?", end='')
@@ -41,6 +50,7 @@ print("– Con esa cara, mejor robame el celular...")
 print("BA-DUM-TSS!")
 print()
 sleep(3)
+limpiar(1000)
 
 # Chiste 4:
 print("– Amor, te gusta mi disfraz?", end='')
@@ -51,6 +61,7 @@ print("– PERO SOY UN DALMATA!")
 print("BA-DUM-TSS!")
 print()
 sleep(2)
+limpiar(1000)
 
 # Despedida:
 print("Espero te hayas divertido.")
