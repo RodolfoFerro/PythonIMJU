@@ -248,8 +248,14 @@ def verifica_cueva(cueva):
     else:
         print("EL DRAGON TE HA COMIDO, POR FEO.")
 
-intro()
-cueva = escoge_cueva()
-verificar_cueva(cueva)
+
+restart = "si"
+while restart == "si" or restart == "s":
+    intro()
+    cueva = escoge_cueva()
+    verifica_cueva(cueva)
+
+    restart = input("Deseas jugar de nuevo? (si/no): ")
+    print()
 
 ```
