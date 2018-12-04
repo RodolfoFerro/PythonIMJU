@@ -227,11 +227,29 @@ es codicioso y hambriento y te va a comer sin chistar..."""
 
 def escoge_cueva():
     cueva = ""
-    while cueva != "1" or cueva != "2":
+    while cueva != "1" and cueva != "2":
         cueva = input("Escoge una cueva (1/2): ")
     return cueva
 
 
+def verifica_cueva(cueva):
+    # Suspenso:
+    print("Te acercas a la cueva...")
+    sleep(2)
+    print("Esta oscuro y tenebroso...")
+    sleep(2)
+    print("Un enorme dragon salta frente a ti! Abre su boca y...")
+    sleep(2)
+
+    dragon = randint(1, 2)
+
+    if dragon == int(cueva):
+        print("EL DRAGON TE HA ENTREGADO SU TESORO!")
+    else:
+        print("EL DRAGON TE HA COMIDO, POR FEO.")
+
 intro()
 cueva = escoge_cueva()
+verificar_cueva(cueva)
+
 ```
