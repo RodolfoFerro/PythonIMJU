@@ -23,4 +23,13 @@ es codicioso y hambriento y te va a comer sin chistar..."""
     print()
     return
 
+
+def escoge_cueva():
+    cueva = ""
+    while cueva != "1" or cueva != "2":
+        cueva = input("Escoge una cueva (1/2): ")
+    return cueva
+
+
 intro()
+cueva = escoge_cueva()
