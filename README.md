@@ -295,8 +295,8 @@ function setup() {
 	createCanvas(windowWidth, windowHeight);
 	x = 250;
 	y = 250;
-	vx = 2;
-	vy = -2;
+	vx = 3;
+	vy = -3;
 }
 
 function dibuja_bolita(x, y, radio) {
@@ -315,5 +315,12 @@ function draw() {
 	background(67, 163, 224);
 	[x, y] = mueve_bolita(x, y, vx, vy);
 	dibuja_bolita(x, y, 10);
+
+	if (x > (windowWidth-10) || x < 10) {
+		vx = -vx;
+	}
+	if (y > (windowHeight-10) || y < 10) {
+		vy = -vy;
+	}
 }
 ```
