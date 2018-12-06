@@ -28,6 +28,7 @@ function mueve_bolita(x, y, vx, vy) {
 
 function draw() {
 	background(133, 182, 242);
+	text("Score: " + golpes, 10, 20);
 	[x, y] = mueve_bolita(x, y, vx, vy);
 	dibuja_bolita(x, y, 10);
 	dibuja_barrita(ancho);
@@ -46,16 +47,10 @@ function draw() {
 		vy = -vy;
 		golpes = golpes + 1;
 		if (golpes % 5 == 0) {
-			if (vx > 0){
-				vx = vx + 1;
-			} else {
-				vx = vx - 1;
-			}
-			if (vy > 0){
-				vy = vy + 1;
-			} else {
-				vy = vy - 1;
-			}
+			if (vx > 0) vx = vx + 1;
+			else vx = vx - 1;
+			if (vy > 0) vy = vy + 1;
+			else vy = vy - 1;
 		}
 	}
 }
