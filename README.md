@@ -334,6 +334,7 @@ function setup() {
 	vx = 5;
 	vy = -5;
 	ancho = 50;
+	golpes = 0;
 }
 
 function dibuja_bolita(x, y, radio) {
@@ -366,8 +367,25 @@ function draw() {
 	if (y < 10) {
 		vy = -vy;
 	}
-	if (y > (windowHeight-60) && x > (mouseX-ancho) && x < (mouseX+ancho) && y < (windowHeight-40)){
+	if (y > (windowHeight-10)){
+		vx = 0;
+		vy = 0;
+	}
+	if (y > (windowHeight-60) && x > (mouseX-ancho) && x < (mouseX+ancho) && y < (windowHeight-50)){
 		vy = -vy;
+		golpes = golpes + 1;
+		if (golpes % 5 == 0) {
+			if (vx > 0){
+				vx = vx + 1;
+			} else {
+				vx = vx - 1;
+			}
+			if (vy > 0){
+				vy = vy + 1;
+			} else {
+				vy = vy - 1;
+			}
+		}
 	}
 }
 ```
